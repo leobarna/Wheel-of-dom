@@ -2,14 +2,18 @@ const nombres = ["Alisa","Amanda","Ana G","Ana L", "Angie", "Clau", "Daniela R."
 ];
 
 document.querySelector("button").addEventListener("click",voluntario);
-
+let positionRandom = Math.floor(Math.random()*nombres.length);
 function voluntario(){
-    const randomItem = nombres[Math.floor(Math.random()*nombres.length)];
+
+    const randomItem = nombres[positionRandom];
     console.log(randomItem);
 
 }
-
+function myDelete() {
+    nombres.splice(positionRandom,1)
+}
 //console.log(nombres[4]);
 
 console.log(voluntario());
+console.log(myDelete());
 
