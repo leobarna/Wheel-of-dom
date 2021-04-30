@@ -4,22 +4,24 @@ function voluntario(){
     let positionRandom = Math.floor(Math.random()*nombres.length);
     const randomItem = nombres[positionRandom];
     console.log(randomItem);
-    nombres.splice(positionRandom,1)
+    nombres.splice(positionRandom,1);
 
     let elegida = document.getElementById("candidata");
     elegida.innerHTML = randomItem;
+
+    if (nombres.length === 0) {
+      elegida.innerHTML = "Carga la página de nuevo";
+   }
    // document.body.innerHTML = (randomItem);
 
 }
 
+
 document.querySelector("button").addEventListener("click",voluntario);
+
 //const content = element.innerHTML;
 
 
-//console.log(voluntario());
+//invocar el método removeChild(elemento). Dicha función eliminará el elemento.
 
-//console.log(nombres[4]);
-
-
-//console.log(myDelete());
 
