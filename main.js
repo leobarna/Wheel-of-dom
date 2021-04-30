@@ -4,7 +4,10 @@ function voluntario(){
     let positionRandom = Math.floor(Math.random()*nombres.length);
     const randomItem = nombres[positionRandom];
     console.log(randomItem);
-    document.body.innerHTML = (randomItem);
+
+    let elegida = document.getElementById("candidata");
+    elegida.innerHTML = randomItem;
+   // document.body.innerHTML = (randomItem);
 
 }
 
