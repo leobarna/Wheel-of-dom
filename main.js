@@ -4,6 +4,7 @@ function voluntario(){
     let positionRandom = Math.floor(Math.random()*nombres.length);
     const randomItem = nombres[positionRandom];
     console.log(randomItem);
+    nombres.splice(positionRandom,1)
 
     let elegida = document.getElementById("candidata");
     elegida.innerHTML = randomItem;
@@ -16,9 +17,7 @@ document.querySelector("button").addEventListener("click",voluntario);
 
 
 //console.log(voluntario());
-//function myDelete() {
-   // nombres.splice(positionRandom,1)//
-//}
+
 //console.log(nombres[4]);
 
 
