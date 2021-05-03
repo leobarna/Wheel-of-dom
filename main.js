@@ -15,9 +15,13 @@ function voluntario(){
    // document.body.innerHTML = (randomItem);
 
 }
+function recarga(){
+    window.open("index.html","_top");
+}
+document.getElementById("inicio").addEventListener("click",voluntario);
+document.getElementById("reinicio").addEventListener("click",recarga);
 
-
-document.querySelector("button").addEventListener("click",voluntario);
+//document.querySelector("button").addEventListener("click",voluntario);
 
 //const content = element.innerHTML;
 
