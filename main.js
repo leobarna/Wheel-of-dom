@@ -5,9 +5,14 @@ function voluntario(){
     const randomItem = nombres[positionRandom];
     console.log(randomItem);
     nombres.splice(positionRandom,1);
+    const padre = document.getElementById("lista").getElementsByTagName("ul")[0];//solo tengo 1 ul//
+    const hijo = padre.getElementsByTagName("li")[positionRandom];
+    padre.removeChild(hijo);
+
 
     let elegida = document.getElementById("candidata");
     elegida.innerHTML = randomItem;
+
 
     if (nombres.length === 0) {
       elegida.innerHTML = "Carga la página de nuevo";
